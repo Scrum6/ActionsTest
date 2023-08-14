@@ -32,9 +32,6 @@ jobs:
           node-version: 18.16.0
           # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm.
           cache: yarn
-      - name: install Yarn
-        run:
-            npm install --global yarn
       - name: install dependencies
         run:
-            yarn yarn install --frozen-lockfile
+            yarn install --frozen-lockfile
